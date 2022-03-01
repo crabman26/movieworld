@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Movie voting{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <nav id="user-nav">
+                <a href="{{ path('movie_index') }}">Index</a>
+            </nav>
+            {% if vote == TRUE %}
+                <h2>Thank you for casting your vote!</h2>
+            {% else %}
+                <h2>You cannot vote for this movie.</h2>
+            {%endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

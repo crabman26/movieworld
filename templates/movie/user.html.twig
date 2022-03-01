@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Movies by Username{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h1>Movies</h1>
+            <nav id="user-nav">
+                <a href="{{ path('movie_index') }}">Index</a>
+            </nav>
+            {% for movie in movies %}
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Title</th>
+                            <td>{{ movie.Title }}</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>{{ movie.Description }}</td>
+                        </tr>
+                        <tr>
+                            <th>Name_of_the_user</th>
+                            <td>{{ movie.NameOfTheUser }}</td>
+                        </tr>
+                        <tr>
+                            <th>Date_of_publication</th>
+                            <td>{{ movie.DateOfPublication ? movie.DateOfPublication|date('Y-m-d') : '' }}</td>
+                        </tr>
+                        <tr>
+                            <th>Likes</th>
+                            <td>{{ movie.Likes }}</td>
+                        </tr>
+                        <tr>
+                            <th>Hates</th>
+                            <td>{{ movie.Hates }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+    
+{% endblock %}

@@ -1,3 +1,71 @@
-body {
-    background-color: lightgray;
+a {
+    text-decoration: none;
+}
+#user-nav {
+    border: 1px solid #000;
+    width: 70px;
+    height: 40px;
+    float: right;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.movie-list {
+    width: 80%;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.movie-title {
+    float: left;
+}
+
+.posted-info {
+    width: 140px;
+    float: right;
+}
+
+.movie-description {
+    clear: both;
+}
+
+.movie-votes {
+    width: 120px;
+    float: left;
+}
+
+.actions {
+    width: 80px;
+    float: right;
+    clear: both;
+}
+
+#movie-actions {
+    width: 18%;
+    float: right;
+    text-align: center;
+}
+
+#movie-new {
+    width: 195px;
+    height:  40px;
+}
+
+#movie-new, #voting {
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.vote-list {
+    border-top: 3px solid #2f3293;
+    color: #00adef;
+    list-style-type: none;
+}
+
+.vote-input {
+    margin-left: 10px;
 }

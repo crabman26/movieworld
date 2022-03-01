@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Movie World 2022{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <nav id="user-nav">
+                <ul>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </nav>
+            
+            <h1>Welcome to the movie world app!</h1>
+            <div id="movie-actions">
+                <div id="voting">
+                    <p>Sort by:</p>
+                    <ul>
+                        <li class="vote-list"> 
+                            <input type="radio" id="likes" name="movie-sort" value="Likes">
+                            <label for="likes">Likes</label>
+                        </li>
+                        <li class="vote-list">
+                            <input type="radio" id="hates" name="movie-sort" value="Hates">
+                            <label for="hates">Hates</label>
+                        </li>
+                        <li class="vote-list">
+                            <input type="radio" id="dates" name="movie-sort" value="Dates">
+                            <label for="dates">Dates</label>  
+                        </li>
+                    </ul>
+                </div>     
+            </div>
+            {% for movie in movies %}
+                <div class="movie-list">
+                    <h2 class="movie-title">{{ movie.Title }} </h2>
+                    <p class="posted-info">Posted {{ movie.DateOfPublication ? movie.DateOfPublication|date('d/m/Y') : '' }}</p>
+                    <p class="movie-description">{{ movie.Description }}</p>
+                    <p class="movie-votes"><span class="likes">{{ movie.Likes }} likes</span>| <span class="hates">{{ movie.Hates }} hates</span></p>
+                    <p class="posted-info">Posted by <span style="color:#00adef;" >{{ movie.NameOfTheUser }}</span></p>    
+                </div>
+            {% endfor %}
+            <table class = "table table-bordered">  
+                <tbody id = "movie"></tbody>
+            </table>   
+        </div>
+    </div>
+</div>
+
+{% endblock %}
