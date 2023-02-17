@@ -1,0 +1,102 @@
+a {
+    text-decoration: none;
+}
+
+#user-nav ul li {
+    display: inline;
+}
+
+#user-nav {
+    border: 1px solid #000;
+    width: auto;
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+    padding: 10px;
+}
+
+#movie-actions {
+    width: 18%;
+    float: right;
+    text-align: center;
+    height: 145px;
+    margin-bottom: 10px;
+}
+
+#movie-new {
+    width: 195px;
+    height:  40px;
+}
+
+#movie-new, #voting {
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+#update-form {
+    width: 80%;
+    float: left;
+}
+
+#delete-form {
+    width: 70px;
+    float: right;
+    position: absolute;
+    bottom: 124px;
+    left: 220px;
+}
+
+.movie-list {
+    width: 80%;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.movie-title {
+    float: left;
+}
+
+.posted-info {
+    width: 140px;
+    float: right;
+}
+
+.movie-description {
+    clear: both;
+}
+
+.movie-votes {
+    width: 130px;
+    float: left;
+    margin-right: 50px;
+}
+
+.Like,.Hate {
+    color: #00adef;
+} 
+
+.actions {
+    width: 40px;
+    float: right;
+    clear: both;
+}
+
+.vote-list {
+    border-top: 3px solid #2f3293;
+    color: #00adef;
+    list-style-type: none;
+}
+
+.vote-input {
+    margin-left: 10px;
+}
+
+
+
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsIm1hcHBpbmdzIjoiQUFBQTtJQUNJLDJCQUEyQjtBQUMvQiIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2Fzc2V0cy9zdHlsZXMvYXBwLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGdyYXk7XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/
